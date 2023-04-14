@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav_flex {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 5vh 5vw;
+}
+
+.nav_flex h1 {
+  font-size: 5rem;
+}
+
+.nav_flex nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav_flex nav a:nth-of-type(2) {
+  padding: 0 3vw;
+}
+
+.home_section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20vh 5vw;
+}
+
+.home_section article {
+  margin-top: 20vh;
+}
+
+.home_section article div {
+  margin-bottom: 2vh;
+}
+
+.home_section article div p {
+  font-size: 3rem;
+  padding-bottom: 1vh;
+}
+
+.home_section article p span {
+  font-weight: 700;
+}
+
+.home_section article h2 {
+  font-size: 5.5rem;
+  padding-bottom: 3vh;
+}
+
+.home_section article h2:nth-of-type(2) {
+  margin-bottom: 10vh;
+}
+
+.home_section article a {
+  text-decoration: none;
+  background-color: palevioletred;
   color: white;
+  padding: 1vh 2vw;
+  border-radius: 10px;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.home_section article a:hover {
+  background-color: lightskyblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home_section div img {
+  width: 50vw
+}
+
+.about_section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20vh 5vw;
+}
+
+.about_section div h2 {
+  font-size: 3rem;
+}
+
+.about_us {
+  font-size: 8rem;
+  font-weight: 900;
+  color: lightgray;
+}
+
+.section_article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20vh 15vw;
+}
+
+.section_article h2 {
+  font-size: 3rem;
+  padding-bottom: 1vh;
+}
+
+.section_article h2 span {
+  font-weight: 300;
+}
+
+.section_article p {
+  font-size: 2.5rem;
+  padding-top: 1vh;
+}
+
+.section_product div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20vh 5vw 0 5vw;
+}
+
+.section_product div h2 {
+  font-size: 3rem;
+}
+
+.products {
+  font-size: 8rem;
+  font-weight: 900;
+  color: lightgray;
+}
+
+.section_product article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section_product article div {
+  flex-direction: column;
+}
+
+.section_product article div p {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-right: 10vw;
+  padding-bottom: 5vh;
+  padding: 5vh 10vw 5vh 0;
+}
+
+
+.section_product article div:nth-of-type(1) {
+  background-color: palevioletred;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding: 0 0.2vw;
+}
+
+.section_product article div:nth-of-type(2) {
+  background-color: sandybrown;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding: 0 2.7vw;
+}
+
+.section_product article div:nth-of-type(3) {
+  background-color: lightskyblue;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding: 1vh 2vw;
+}
+
+.section_product article div input {
+  background-color: darkcyan;
+  border: none;
+  padding: 1vh 2vw;
+  border-radius: 10px;
+  margin: 5vh 0 5vh 5vw;
+  color: white;
+  font-weight: 700;
+}
+
+.section_product article div input:hover {
+  background-color: crimson;
+}
+
+.footer_section {
+  background-image: url('./pics/pexels-photo-509922\ 1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 10vh;
+  width: 100%;
+  padding: 10vh 0 2vh 5vw;
+}
+
+.footer_section article h2 {
+  font-size: 3.5rem;
+  padding-bottom: 5vh;
+}
+
+.footer_section article p {
+  font-size: 2rem;
+  line-height: 5vh;
+}
+
+.last {
+  text-align: center;
+  padding-top: 10vh;
+  font-size: 1.5rem;
 }
